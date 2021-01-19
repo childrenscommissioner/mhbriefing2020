@@ -62,7 +62,7 @@ for(i in c("perc_budget","spend_YP","perc_access","avg_wait","perc_closed","over
                             ifelse(spend_YP< 60,"&#163;40 to &#163;60", 
                               ifelse(spend_YP< 80,"&#163;60 to &#163;80",
                                 ifelse(spend_YP< 100,"&#163;80 to &#163;100","&#163;100+")))),
-      levels=c("&#163;20 to &#163;40","&#163;40 to 60","&#163;60 to &#163;80","&#163;80 to &#163;100","&#163;100+"))) 
+      levels=c("&#163;20 to &#163;40","&#163;40 to &#163;60","&#163;60 to &#163;80","&#163;80 to &#163;100","&#163;100+"))) 
 
       
     }
@@ -160,7 +160,7 @@ leaflet(data=map, options = leafletOptions(background="#FFF")) %>%
             na.label = "Missing/excluded",
             opacity = 0.7
   ) %>%
-  addLegend("topleft", pal = pal_bin, values=factor(c("&#163;20 to &#163;40","&#163;40 to 60","&#163;60 to &#163;80","&#163;80 to &#163;100","&#163;100+"),levels = c("&#163;20 to &#163;40","&#163;40 to 60","&#163;60 to &#163;80","&#163;80 to &#163;100","&#163;100+")),
+  addLegend("topleft", pal = pal_bin, values=factor(c("&#163;20 to &#163;40","&#163;40 to &#163;60","&#163;60 to &#163;80","&#163;80 to &#163;100","&#163;100+"),levels = c("&#163;20 to &#163;40","&#163;40 to &#163;60","&#163;60 to &#163;80","&#163;80 to &#163;100","&#163;100+")),
             title = "Title",
             na.label = "Missing/excluded",
             opacity = 0.7
